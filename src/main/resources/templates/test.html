@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="../static/css/common.css" rel="stylesheet" th:href="@{/css/common.css}"/>
+</head>
+<body>
+
+<div th:replace="common :: header"></div>
+
+<div id ="content">
+123123123
+<!--/*@thymesVar id="name" type="java.lang.String"*/-->
+<p th:text="'Hello！, ' + ${name} + '!'" >3333</p>
+
+</div>
+<div th:replace="common :: footer"></div>
+
+</body>
+<script src="../static/js/jquery-3.2.1.min.js" th:src="@{/js/jquery-3.2.1.min.js}"></script>
+</html>

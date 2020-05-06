@@ -1,0 +1,39 @@
+server:
+    port: 18181
+spring:
+    thymeleaf:
+        mode: HTML5
+        encoding: UTF-8
+        content-type: text/html
+        cache: false
+    activemq:
+      broker-url: tcp://192.168.10.97:61616
+      user: admin
+      password: admin
+      pool:
+        enabled: false
+    jpa:
+      show-sql: true
+    datasource:
+      url: jdbc:mysql://192.168.10.93:3306/test?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+      username: root
+      password: qweDSAzxc
+      driver-class-name: com.mysql.jdbc.Driver
+
+
+logging:
+  level: info
+  file: ./springBootTest.log
+
+person:
+  lastName: hello
+  age: 18
+  boss: false
+  birth: 2017/12/12
+  maps: {k1: "v1",k2: "v2",k3: 123123}
+  lists:
+    - lisi
+    - zhaoliu
+  dog:
+    name: 小狗
+    age: 12
